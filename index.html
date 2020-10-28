@@ -4,6 +4,8 @@
     <meta name="google" content="notranslate">
     <meta content="./assets/icon.png" itemprop="image">
     <link href="./assets/icon.png" rel="shortcut icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./assets/dialog.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Super Mario Maker.NET - The Greatest Experience of Mario Maker.</title>
     <style>
@@ -53,11 +55,13 @@
     </style>
   </head>
   <body>
+    <div id="darken" style="pointer-events: none; background: rgba(0,0,0,0); width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 15"></div>
     <div style="border-radius: 20px; background-color: #ffe647; margin: auto; padding: 10px; width: 90%; height: 170px; font-weight: bold; font-size: 48px; color: #ffffff; text-align: center; text-transform: uppercase">
       <p><span style="color: black; font-weight: normal;">super mario maker</span><span style="color: red; font-weight: normal;">.net</span></p>
       <p style="font-size: 24px; color: blue;">the greatest experience of mario maker.</p>
     </div>
     <br>
     <a href="https://dominicentek.github.io/SuperMarioMakerNET/"><button style="-ms-transform: translate(-50%); transform: translate(-50%); left: 50%; position: absolute;">Visit the Game Proto (Alpha)</button></a>
+    <button style="-ms-transform: translate(-50%); transform: translate(-50%); left: 50%; position: absolute" onclick="displayDialog(\"test\");">test</button>
   </body>
 </html>
